@@ -12,7 +12,7 @@ from pathlib import Path
 
 import dolfin as df
 import numpy as np
-import ufl
+import ufl_legacy as ufl
 
 from pymor.core.base import ImmutableObject
 from pymor.core.defaults import defaults

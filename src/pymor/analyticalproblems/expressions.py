@@ -303,7 +303,7 @@ class BaseConstant(Expression):
         return f'array({self.numpy_symbol}, ndmin={len(self.shape)}, copy=False)'
 
     def fenics_expr(self, params):
-        import ufl
+        import ufl_legacy as ufl
         if self.fenics_symbol is None:
             raise NotImplementedError('No FEniCS symbol was given!')
 
